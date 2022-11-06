@@ -1,0 +1,37 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Random;
+/** 
+ * ACS-1903 Parallel ArrayLists example
+ * @author Sveinson
+*/
+
+public class ParalleArrayListsExample1{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Random r = new Random();
+        int nextId = 1000;
+        
+        // make the array lists
+        ArrayList<Integer> id = new ArrayList<Integer>();
+        ArrayList<Integer> t1 = new ArrayList<Integer>();
+        ArrayList<Integer> t2 = new ArrayList<Integer>();
+        
+        // populate the array lists
+        for(int i = 0; i < 10; i++){
+            id.add(nextId++);
+            t1.add(r.nextInt(26) + 25);
+            t2.add(r.nextInt(26) + 25);
+        } // end for
+        
+        //id.set(2, 2000);
+        //System.out.println(id.size());
+        
+        // print the array lists
+        for(int i = 0; i < id.size(); i++){
+            System.out.println(id.get(i) + "\t" + t1.get(i) + "\t" + t2.get(i));
+        }// end for  
+
+        System.out.println("end of program");
+    }
+}
