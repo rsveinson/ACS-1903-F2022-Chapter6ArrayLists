@@ -6,7 +6,8 @@ public class BasicOperationsOnArrayListWithPrintMethod
 {
     public static void main(String[] args){
         // new, empty ArrayList of people
-        ArrayList<String> people=new ArrayList();
+        ArrayList<String> people = new ArrayList();
+        
         int n = 5;
         // add some names 
         people.add("Joe");
@@ -24,13 +25,16 @@ public class BasicOperationsOnArrayListWithPrintMethod
         printList(people);
         
         // display the names in people
-        for (String p: people)
+        for (String p: people){
             System.out.print(p+"  ");
+        }// end for each
     } // end main
     
     public static void printList(ArrayList<String> l){
-        for (String p: l)
+        for (String p: l){
             System.out.println(p);
+        }
+        l.set(0, "Loki");
             
         System.out.println("***************\n");
     }// end printList
