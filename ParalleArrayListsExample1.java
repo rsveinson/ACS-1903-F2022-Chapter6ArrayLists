@@ -26,13 +26,28 @@ public class ParalleArrayListsExample1{
 
         //id.set(2, 2000);
         //System.out.println(id.size());
+        System.out.println("\n");
+        
+        // correctly access an entire record
+        // System.out.print(id.get(2));
+        // System.out.print(": " + t1.get(2));
+        // System.out.println(", " + t2.get(2));
 
+        // oops careless indexing can lead to unwanted results
+        // System.out.print(id.get(2));
+        // System.out.print(": " + t1.get(1));
+        // System.out.println(", " + t2.get(6));
+        
+        
         // print the array lists
         for(int i = 0; i < id.size(); i++){
-            System.out.println(id.get(i) + "\t" + t1.get(i) + "\t" + t2.get(i));
-        }// end for  
+            // System.out.print(id.get(i) + "\t");
+            // System.out.print(t1.get(i) + "\t");
+            // System.out.println(t2.get(i));
+         }// end for  
 
         // print the record of the person with the larest t1 value
+        
         // set up: set the value of the largest variable
         int largestT1 = Integer.MIN_VALUE;
         int largeIndex = -1;
@@ -47,9 +62,12 @@ public class ParalleArrayListsExample1{
 
         //System.out.println(largestT1 + " " + largeIndex);
 
-        // 2. print the record
-        int i = largeIndex;
-        System.out.println(id.get(i) + "\t" + t1.get(i) + "\t" + t2.get(i));
-        System.out.println("end of program");
+        // 2. print the record        
+        System.out.print(id.get(largeIndex) + "\t");
+        System.out.print(t1.get(largeIndex) + "\t");
+        System.out.println(t2.get(largeIndex));
+        
+        
+        System.out.println("\n\nend of program");
     }
 }
