@@ -17,7 +17,7 @@ public class AlofPrimitives{
         Random r = new Random();
         Scanner scanner = new Scanner(System.in);
         
-        System.out.println("siz of n " + n.size());
+        System.out.println("size of n " + n.size());
         
         for(int i = 0; i < 50; i++){
             n.add(r.nextInt(25) + 1);
