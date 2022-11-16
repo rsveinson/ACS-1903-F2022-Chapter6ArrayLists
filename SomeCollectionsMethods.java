@@ -7,12 +7,14 @@ public class SomeCollectionsMethods
         // set up
         ArrayList<String> people = new ArrayList<>();
         people.clear();
+        
+        // add a bunch of objects all at once
         Collections.addAll(people, "John", "Paul", "George", "Ringo");
         // The list people is now ["John", "Paul", "George", "Ringo"]
         System.out.println("original \t"+people);
 
         //sort()
-        //can be used to sort a list 
+        //can be used to sort a list
         people.clear();
         Collections.addAll(people, "John", "Paul", "George", "Ringo");
         Collections.sort(people);

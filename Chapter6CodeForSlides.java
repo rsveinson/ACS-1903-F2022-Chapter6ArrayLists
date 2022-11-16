@@ -34,6 +34,8 @@ public class Chapter6CodeForSlides {
         
         // variations
         ArrayList<Integer> ages;     // declare an ArrayList
+        // ages = null;
+        // System.out.println(ages);
         ages = new ArrayList<>();    // allocate memory and set the pointer
         
         // declare and allocate a new ArrayList of type <Sttring>

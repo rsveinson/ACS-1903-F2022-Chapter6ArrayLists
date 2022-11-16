@@ -34,6 +34,7 @@ public class WrapperExample{
         m = list.get(0);    // auto unboxing
         list.add(rnd.nextInt(10) + 1);  // auto boxing
         
+        //auto boxing
         for(int i = 0; i < 5; i++){
             list.add(rnd.nextInt(11) + 100);
         }// end for

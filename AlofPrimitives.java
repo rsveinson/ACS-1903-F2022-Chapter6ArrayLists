@@ -29,7 +29,11 @@ public class AlofPrimitives{
         printList(n);
         
         
+        // makes a deep copy of the list n
+        // note that changes made to n don't affect differntN and vise versa
         ArrayList<Integer> differentN = new ArrayList(n);
+        
+        // both n and otherN now point at the same list
         otherN = n;
         System.out.println(n.get(3));
         System.out.println(otherN.get(3));
@@ -38,7 +42,7 @@ public class AlofPrimitives{
         n.set(3, 25);
         System.out.println(n.get(3));
         System.out.println(otherN.get(3));
-        System.out.println(differentN.get(3));
+        System.out.println(differentN.get(3));  // one of these things doesn't belong
         
         int number = n.get(3);
         System.out.println(number);
