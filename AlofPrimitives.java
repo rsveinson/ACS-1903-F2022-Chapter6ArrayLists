@@ -20,6 +20,7 @@ public class AlofPrimitives{
         System.out.println("size of n " + n.size());
         
         for(int i = 0; i < 50; i++){
+            // auto-boxing of the primitive int into the object Integer
             n.add(r.nextInt(25) + 1);
         } // end for
         
@@ -30,7 +31,7 @@ public class AlofPrimitives{
         
         
         // makes a deep copy of the list n
-        // note that changes made to n don't affect differntN and vise versa
+        // note that changes made to n don't affect differntN and vice versa
         ArrayList<Integer> differentN = new ArrayList(n);
         
         // both n and otherN now point at the same list
